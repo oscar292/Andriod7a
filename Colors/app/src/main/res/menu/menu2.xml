@@ -8,4 +8,14 @@
         android:title="@string/lblOpReset"
         />
 
+    <item android:id="@+id/iteBlue"
+        android:title="@string/lbl_blue"
+        />
+    <item android:id="@+id/iteGreen"
+    android:title="@string/lbl_green"
+    />
+
+    <item android:id="@+id/iteRed"
+        android:title="@string/lbl_red"
+        />
 </menu>

@@ -2,6 +2,7 @@ package com.example.colors;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.TextViewCompat;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,10 +14,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Palette extends AppCompatActivity
         implements SeekBar.OnSeekBarChangeListener {
+
 
     private SeekBar vRed = null;
     private SeekBar vGreen = null;
@@ -63,10 +66,20 @@ public class Palette extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
 
+
+
+
+
+
+
+
+
             case R.id.icHelp :
+
 
                 Intent intent2 = new Intent(this, Activity_help.class);
                 startActivity(intent2);
+
                 break;
 
 
@@ -74,7 +87,6 @@ public class Palette extends AppCompatActivity
                 Toast.makeText(this, "You've pressed Transparent icon", Toast.LENGTH_SHORT).show();
                 vAlpha.setProgress(0);
                 break;
-
 
 
             case R.id.iteTransparent :
@@ -87,6 +99,7 @@ public class Palette extends AppCompatActivity
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
+
                 break;
 
             case R.id.iteOpaque :
@@ -128,7 +141,7 @@ public class Palette extends AppCompatActivity
                 break;
 
             case R.id.iteBlue :
-                //Change color to blue
+
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
                 vBlue.setProgress(255);
@@ -176,8 +189,6 @@ public class Palette extends AppCompatActivity
                 break;
 
             case R.id.closeapp :
-
-
                 System.exit(0);
                 break;
 
@@ -223,6 +234,35 @@ public class Palette extends AppCompatActivity
                 Intent intent3 = new Intent(this, Activity_help.class);
                 startActivity(intent3);
                 break;
+
+
+            case R.id.iteBlue :
+
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
+                break;
+
+            case R.id.iteRed :
+
+                vRed.setProgress(255);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
+
+                break;
+
+            case R.id.iteGreen :
+
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
+
+                break;
+
+
 
         }
 
