@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">carrito de compras</string>
+    <string name="product_name">nombre del producto</string>
+    <string name="quantity">cantidad</string>
+    <string name="add_to_cart">agregar al carro</string>
+    <string name="buy">comprar</string>
+    <string name="name">nombre</string>
+    <string name="number">numero</string>
+
+</resources>

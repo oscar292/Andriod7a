@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shooppingcar</string>
+    <string name="product_name">shooppingcar</string>
+    <string name="quantity">quantity</string>
+    <string name="add_to_cart">add  to cart</string>
+    <string name="buy">buy</string>
+    <string name="name">name</string>
+    <string name="number">number</string>
+
+</resources>
